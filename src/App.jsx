@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <NewTodo setTodos={setTodos} />
-      <Todos todos={todos} />
+      <Todos todos={todos} setTodos={setTodos} />
     </>
   );
 }
