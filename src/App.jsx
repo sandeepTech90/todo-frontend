@@ -1,9 +1,11 @@
 import "./App.css";
-import Todos from "./components/Todos";
+import NewTodo from "./components/newTodo/NewTodo";
+import Todos from "./components/todo/Todos";
 
 function App() {
   return (
     <>
+      <NewTodo />
       <Todos />
     </>
   );

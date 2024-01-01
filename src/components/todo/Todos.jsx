@@ -15,14 +15,16 @@ const Todos = () => {
   }, []);
 
   return (
-    <div className="todos">
-      {todos.map((todo) => (
-        <div className="todo">
-          <h2>{todo.title}</h2>
-          <p>{todo.description}</p>
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="todos">
+        {todos.map((todo) => (
+          <div className="todo" key={todo.id}>
+            <h2>{todo.title}</h2>
+            <p>{todo.description}</p>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
